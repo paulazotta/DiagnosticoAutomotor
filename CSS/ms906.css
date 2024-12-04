@@ -11,3 +11,40 @@
 .carousel-slide{
     justify-items: center;
 }
+
+.contenedor-de-contenedores{
+    display: flex;
+
+}
+.container-carousel-prueba{
+    /* height: 0.3rem; */
+    width: 50%;
+    
+    margin: 2%;
+}
+.contenedor-breve-info{
+    width: 50%;
+    margin: 2%;
+}
+.enlaces{
+    color: black;
+    text-decoration: none;
+}
+.enalces:hover{
+    color: orangered;
+}
+.lista-enlaces{
+    text-decoration: none;
+    list-style: none;
+}
+
+.texto-breve-descripcion{
+    margin-top: 30px;
+}
+.titulo-breve-descripcion{
+    margin-bottom: 30px;
+}
+
+.imagen-en-descripcion{
+    width: 50%;
+}
