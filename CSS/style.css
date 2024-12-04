@@ -1,0 +1,131 @@
+.logo{
+    width: 20%;
+}
+
+.body{
+    padding-top: 8rem;
+}
+.container-envios-garantia{
+    display: flex;
+    justify-content: center;
+}
+.containers-pequeños-garantia{
+    border: 1px solid black;
+    padding: 2rem;
+}
+.containers-pequeños-envio{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 2rem;
+}
+.presentacion{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h3{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.carousel-slide{
+    padding: 0;
+
+}
+
+/*PRODUCTOS DESTACADOS*/
+
+.container-productos-destacados{
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-productos-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+   
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: black;
+    padding: 1rem;
+}
+.lista-footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.items-footer{
+    color: antiquewhite;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+.logo-footer{
+    width: 15%;
+}
+
+
+
+.imagenes-prueba{
+    width: 30%;
+    
+    background-color: red;
+}
+
+
+
+
+.cardsAutelPrueba{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* .cardEquipos{
+    background-color: red;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 100px 200px;
+    max-width: 85%;
+    margin: 15px;
+    
+    
+    
+    
+}
+.imagenEquipo{
+    width: 20%;
+   
+} */
+
+ .grid-container{
+    background-color: violet;
+    border: 1px solid green;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 100px 200px;
+    max-width: 85%;
+    margin: 15px;
+
+    
+}
+
+/* .nombreEquipo{
+    grid-column: 1/3;
+    background-color: white;
+    
+   
+}  */
+

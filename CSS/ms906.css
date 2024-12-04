@@ -1,0 +1,13 @@
+.container-producto{
+   
+    margin: 8rem;
+}
+.logo{
+    width: 70%;
+}
+.titulo-producto{
+    text-align: center;
+}
+.carousel-slide{
+    justify-items: center;
+}
