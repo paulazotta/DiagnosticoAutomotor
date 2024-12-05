@@ -8,16 +8,20 @@
 .container-envios-garantia{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 .containers-pequeños-garantia{
     border: 1px solid black;
+    border-radius: 5px;
     padding: 2rem;
+    margin: 0 30px;
 }
 .containers-pequeños-envio{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
+    
     padding: 2rem;
+    margin: 0 30px;
 }
 .presentacion{
     margin-left: 3rem;
@@ -49,6 +53,9 @@ h3{
     justify-content: center;
     margin: 3rem;
    
+}
+.card{
+    margin: 0 2rem;
 }
 
 /*FOOTER*/
