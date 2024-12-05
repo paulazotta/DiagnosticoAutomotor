@@ -16,6 +16,10 @@
     display: flex;
 
 }
+.contenedor-de-contenedores-gris{
+    display: flex;
+    background-color: #dcdcdc;
+}
 .container-carousel-prueba{
     /* height: 0.3rem; */
     width: 50%;
@@ -39,12 +43,12 @@
 }
 
 .texto-breve-descripcion{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .titulo-breve-descripcion{
     margin-bottom: 30px;
 }
 
 .imagen-en-descripcion{
-    width: 50%;
+    width: 100%;
 }
