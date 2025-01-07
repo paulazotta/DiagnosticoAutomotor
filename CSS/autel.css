@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------NAV BAR--------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.logo{
+    width: 20%;
+}
+
+input{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.boton-buscar{
+    background-color: transparent;
+    border: none;
+}
+
+button:hover{
+    background-color: orange;
+    border: 1px solid orange;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+   
+}
+
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+   
+}
+.menu-horizontal > li > a:hover{
+    background-color: orange;
+    color: black;
+    border-radius: 10px;
+    padding: 1px 5px;
+    
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: black;
+    border-radius: 10px;
+    /* width: 200px; */
+
+}
+
+.menu-horizontal > li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 5px 2px;
+}
+.menu-vertical >li > a:hover{
+    color: orange
+}
+
+/*------------------ FIN NAV BAR--------------------------*/
+
+/*------------------ FOOTER --------------------------*/

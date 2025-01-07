@@ -24,55 +24,40 @@
 
 
 <body>
-<!--HEADER-->
+
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-              <!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a> -->
-               <img src="imagenes/logo-diagnostico.png" alt="logo-diagnostico" class="logo">
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="html\autel.html">Autel</a></li>
-                        <li><a class="dropdown-item" href="html/ms906.html">Foxwell</a></li>
-                        <li><a class="dropdown-item" href="html/ds900.html">Fcar </a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
+    <!--NAVBAR-->
+      <nav>
+        <!--logo-->
+        <img src="imagenes/logo-diagnostico.png" alt="logo" class="logo">
+        <!--search-->
+        <form action="" role="search">
+          <input type="search" placeholder="Buscar productos">
+          <button type="submit" class="boton-buscar"><i class="fi fi-rr-search icono-lupa"></i></button>
+        </form>
+        <!--lista-->
+        
+          <ul class="menu-horizontal">
+            <!-- <li>
+              <a href="../index.html">Inicio</a>
+            </li> -->
+            <li> 
+              <a href="">Productos</a>
+                  <ul class="menu-vertical">
+                    <li><a href="" class="link-desplegable">Equipos de diagnóstico profesional</a></li>
+                    <li><a href="" class="link-desplegable">Equipos de diagnóstico</a></li>
+                    <li><a href="" class="link-desplegable">Probadores de batería</a></li>
                   </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li>
+                <a href="html/contacto.html">Contacto</a>
+              </li>
+          </ul>
+      </nav>
     </header>
     <!--DIV TITULO, BAJADA, SLICES esto tengo que bajarlo en CSS porque queda tapado-->
     <div class="body">
-      <div class="presentacion">
+     <div class="presentacion">
         <h1>Diagnóstico Automotor</h1>
         <h3>Todo lo necesario para el correcto diagnóstico de averías automotrices</h3>
         <p>Hace más de 20 años que estamos en el mercado comercializando las principales marcas: Autel, Foxwell. Somos representantes oficiales. Equipamiento para talleres mecánicos. Equipos para particulares. </p>
@@ -114,82 +99,104 @@
     <div class="container-envios-garantia">
       <div class="containers-pequeños-envio">
         <i class="fi fi-rr-shipping-fast"></i>
-        <p>Envíos a todo el país</p>
+        <p class="texto-envios-garantia">Envíos a todo el país</p>
       </div>
       <div class="containers-pequeños-garantia">
         <i class="fi fi-rr-degree-credential"></i>
-        <p>Productos con garantía</p>
+        <p class="texto-envios-garantia">Productos con garantía</p>
       </div>
     </div>
 
-    <!--DIV PRODUCTOS DESTACADOS-->
-    <div class="container-productos-destacados">
-        <h2>Productos destacados</h2>
-        <div class="cards-productos-destacados">
+    <!--TODOS LOS PRODUCTOS-->
+   <!--DIV TODOS LOS PRODUCTOS-->
+   <div class="container-productos-destacados">
+    <h2>Todos los productos</h2>
+    <div class="cards-productos-destacados">
 
-            <!--Card 1-->
-            <div class="card" style="width: 18rem;">
-              <img src="imagenes/gt_90.png" class="card-img-top" alt="prueba">
-              <div class="card-body">
-                <h5 class="card-title">Foxwell GT-90</h5>
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="#" class="btn btn-primary">Ver</a>
-              </div>
+        <!--Card 1-->
+        <div class="card" style="width: 18rem;">
+          <div class="container-titulo">
+            <h5 class="titulo-categoria">Equipos de diagnóstico</h5>
+          </div>
+          <img src="imagenes/Autel_DS_900/DS900_2.png" class="card-img-top" alt="Autel MaxiDas DS900">
+          <div class="card-body">
+            
+              <a href="html/ds900.html" class="titulo-producto-principal">Autel MaxiDas DS900</a> 
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <!-- <button  class="boton-ver"><a href="#" class="enlace-ver">Ver</a></button> -->
+           
+            <hr>
+            <div class="container-otros-modelos">
+              <h6 class="otros-modelos">Otros modelos</h6>
+              <a href="html/mx900.html" class="enlaces-otros-equipos">Autel MaxiCheck MX900</a>
+              <a href="#" class="enlaces-otros-equipos">Foxwell NT680 Pro</a>
             </div>
-            <!--Card 2-->
-            <div class="card" style="width: 18rem;">
-              <img src="imagenes/ps_100.png" class="card-img-top" alt="prueba">
-              <div class="card-body">
-                <h5 class="card-title">Autel Punta lógica PS100</h5>
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="#" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
-            <!--Card 3-->
-            <div class="card" style="width: 18rem;">
-              <img src="imagenes/Autel_DS_900/DS900_7.png" class="card-img-top" alt="prueba">
-              <div class="card-body">
-                <h5 class="card-title">Autel DS900</h5>
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="#" class="btn btn-primary">Ver</a>
-              </div>
-            </div>
+            
+          </div>
+        </div>
+        <!--Card 2-->
+        <div class="card" style="width: 18rem;">
+          <div class="container-titulo">
+            <h5 class="titulo-categoria">Lectores de averías</h5>
+          </div>
+          <img src="imagenes/Foxwell_NT_301/nt301_1.png" class="card-img-top" alt="Foxwell NT 301">
+          <div class="card-body">
+            
+              <a class="titulo-producto-principal">Foxwell NT301</a> 
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <!-- <button  class="boton-ver"><a href="#" class="enlace-ver">Ver</a></button> -->
+           
+              <hr>
+              <div class="container-otros-modelos">
+                <h6 class="otros-modelos">Otros modelos</h6>
+                <a href="#" class="enlaces-otros-equipos">Autel AP200</a>
+                <a href="#" class="enlaces-otros-equipos">Foxwell NT200</a>
+                <a href="#" class="enlaces-otros-equipos">Autel AL529</a>
+              </div> 
+          </div>
+        </div>
+        <!--Card 3-->
+        <div class="card" style="width: 18rem;">
+          <div class="container-titulo">
+            <h5 class="titulo-categoria">Otros</h5>
+          </div>
+          <img src="imagenes/Autel_DS_900/DS900_2.png" class="card-img-top" alt="Autel punta logica powerscan ps100">
+          <div class="card-body">
+            
+              <a class="titulo-producto-principal">Autel Punta Lógica PS100</a> 
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <!-- <button  class="boton-ver"><a href="#" class="enlace-ver">Ver</a></button> -->
+           
+              <hr>
+              <div class="container-otros-modelos">
+                <h6 class="otros-modelos">Otros modelos</h6>
+                
+                <a href="#" class="enlaces-otros-equipos">Foxwell Probador de batería BT715</a>
+              </div> 
+          </div>
         </div>
     </div>
-    <!--DIV TODOS LOS PRODUCTOS-->
-    <div class="container-productos-destacados">
-      <h2>Todos los productos</h2>
-      <div class="cards-productos-destacados">
+</div>
+<hr>
+  <!--CONTACTO-->
+ 
+<h2 class="titulo-contacto">Contacto</h2>
+<div class="contenedor-grande">
+    <div class="div-1">
+        <h6>Datos de contacto</h6>
+        <ul class="lista-datos">
+            <li class="items-datos"><i class="fi fi-rr-map-pin" style="color: gray"></i> Humberto Primo 985 P. 11 Of. 4, CABA</li>
+            <li class="items-datos"><i class="fi fi-rr-phone-call" style="color: gray;"></i>  4444-4444</li>
+            <li class="items-datos"><i class="fi fi-rr-smartphone" style="color: gray;"></i> 11 3488 1134</li>
+            <li class="items-datos"><i class="fi fi-rr-clock-three" style="color: gray;"></i> Lunes a Viernes de 9 a 17h </li>
+        </ul>
+    </div>
+    <div class="div-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.370399818648!2d-58.3798637!3d-34.6207816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2923d47491%3A0x852d6fd5791dd159!2sDiagnostico%20Automotor!5e0!3m2!1ses!2sar!4v1733939396799!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
 
-          <!--Card 1-->
-          <div class="card" style="width: 18rem;">
-            <img src="imagenes/Autel_DS_900/DS900_2.png" class="card-img-top" alt="prueba">
-            <div class="card-body">
-              <h5 class="card-title">Equipos de diagnóstico profesional</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Ver todos</a>
-            </div>
-          </div>
-          <!--Card 2-->
-          <div class="card" style="width: 18rem;">
-            <img src="imagenes/md808_pro.png" class="card-img-top" alt="prueba">
-            <div class="card-body">
-              <h5 class="card-title">Equipos de diagnóstico</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Ver todos</a>
-            </div>
-          </div>
-          <!--Card 3-->
-          <div class="card" style="width: 18rem;">
-            <img src="imagenes/bt_780.png" class="card-img-top" alt="prueba">
-            <div class="card-body">
-              <h5 class="card-title">Probadores de batería</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Ver todos</a>
-            </div>
-          </div>
-      </div>
-  </div>
+
         
     <!--FOOTER-->
     <footer>

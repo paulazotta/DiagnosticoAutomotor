@@ -1,0 +1,38 @@
+.titulo-contacto{
+    color: red;
+    text-align: center;
+}
+
+.contenedor-grande{
+    display: flex;
+    /* justify-content: center; */
+    padding: 48px;
+}
+.div-1{
+    justify-content: center;
+    width: 33%;
+    border: 1px solid black;
+    /* text-align: center; */
+    /* justify-items: start; */
+    margin-left: 4rem;
+}
+.div-2{
+    justify-content: end;
+    border: 1px solid green;
+    width: 66%;
+    margin-left: 4rem;
+    /* margin: 0; */
+    
+}
+.lista-datos{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  /* text-align: center; */
+}
+.items-datos{
+    list-style: none;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+}

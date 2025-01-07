@@ -1,28 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*------------------NAV BAR--------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
 .logo{
     width: 20%;
 }
 
-.body{
-    padding-top: 8rem;
+input{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
+input:hover{
+    border: none;
+}
+
+.boton-buscar{
+    background-color: transparent;
+    border: none;
+}
+
+.boton-buscar:hover{
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+
+.icono-lupa{
+    color: white;
+    cursor: pointer;
+}
+
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+   
+}
+.menu-horizontal > li > a:hover{
+    background-color: orange;
+    color: black;
+    border-radius: 10px;
+    padding: 1px 5px;
+    
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: black;
+    border-radius: 10px;
+    /* width: 200px; */
+
+}
+
+.menu-horizontal > li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 5px 2px;
+}
+.menu-vertical >li > a:hover{
+    color: orange
+}
+
+/*------------------ FIN NAV BAR--------------------------*/
+
+/*BODY*/
+.body{
+    padding-top: 4rem;
+    
+}
+
+.presentacion {
+    color: black;
+    text-align: center;
+}
+/*------------------------------- CONTAINERS ENVIO GARANTIA -------------------------------*/
 .container-envios-garantia{
     display: flex;
     justify-content: center;
     margin: 20px;
+    
 }
 .containers-pequeños-garantia{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 2rem;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    padding: 1rem;
     margin: 0 30px;
+    background-color: orange;
 }
 .containers-pequeños-envio{
-    border: 1px solid black;
-    border-radius: 5px;
-    
-    padding: 2rem;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    padding: 1rem;
     margin: 0 30px;
+    background-color: orange;
 }
+
+.texto-envios-garantia{
+    font-size: 20px;
+    color: white;
+}
+
+/*--------------------------------------------------------------*/
+
 .presentacion{
     margin-left: 3rem;
     margin-right: 3rem;
@@ -39,25 +155,119 @@ h3{
 }
 
 /*PRODUCTOS DESTACADOS*/
-
 .container-productos-destacados{
-    padding: 3rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Cambiamos a columna para alinear mejor */
+    align-items: center; /* Centra el contenido */
+    padding: 3rem;
+    
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
 }
+
+.container-titulo{
+    background-color: orange;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+.titulo-categoria{   
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
 
 .cards-productos-destacados{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem;
-   
+    margin: 0; /* Eliminar márgenes excessivos */
+   margin: 3rem 1rem 3rem 1rem;
 }
 .card{
-    margin: 0 2rem;
+    margin: 0 1rem;
+}
+.titulo-producto-principal{
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    color: black;
+}
+.titulo-producto-principal:hover{
+    color: orangered;
+}
+.container-otros-modelos{
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.boton-ver{
+    padding: 3px 13px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.enlace-ver{
+    color: white;
+    text-decoration: none;
+}
+.otros-modelos{
+    /* background-color: orange; */
+    border-radius: 10px;
+    color: orange;
+    /* padding: 3px;
+    margin-top: 10px;   */
+}
+.enlaces-otros-equipos{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 5px;
+    color: black;
+    cursor: pointer;
+}
+.enlaces-otros-equipos:hover{
+    color: orange;
 }
 
+/*----------------------------CONTACTO------------------------------*/
+.titulo-contacto{
+    color: black;
+    text-align: center;
+}
+/* .container-contacto{
+    padding: 3rem;
+} */
+.contenedor-grande{
+    display: flex;
+    /* flex-direction: column; Cambiamos a columna para alinear mejor */
+    /* align-items: center; Centra el contenido */
+    padding: 1rem 3rem 1rem 3rem ;
+    margin: 1rem 6rem 1rem 6rem ;
+    
+    /* width: 100%; Asegúrate de que ocupe todo el ancho */
+}
+.div-1, .div-2 {
+    flex: 1; /* Esto hace que ambos divs ocupen igual espacio */
+    margin: 1rem; /* Margen para separación */
+    
+    justify-content: center;
+   
+}
+
+.lista-datos{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  /* text-align: center; */
+}
+.items-datos{
+    list-style: none;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+}
 /*FOOTER*/
 
 .footer{
@@ -136,3 +346,26 @@ h3{
    
 }  */
 
+/*NAV BAR VERSION 2*/
+.container-navbar{
+    
+    justify-content: center;
+    background-color: black;
+}
+.container-fluid{
+    background-color: black;
+    padding: 0.3rem;
+}
+/* .logo{
+    width: 20%;
+} */
+
+.nav-link{
+    color: blueviolet;
+}
+.btn-outline-success{
+    border: 1px solid white;
+}
+.prueba-li{
+    color: white;
+}
